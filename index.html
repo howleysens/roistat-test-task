@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="client/style.css" rel="stylesheet">
+    <title>Lead Form</title>
+</head>
+<body class="bg-red-500">
+<h1>Оформить заказ</h1>
+<form action="server/sendLead.php" method="POST">
+    <div class="flex">
+        <label for="name">Имя:</label>
+        <input type="text" name="name">
+    </div>
+    <div class="flex">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+    </div>
+    <div class="flex">
+        <label for="phone">Телефон:</label>
+        <input type="tel" name="phone">
+    </div>
+    <div class="flex">
+        <label for="price">Цена:</label>
+        <input type="number" name="price">
+    </div>
+
+    <input type="hidden" name="spentTime" id="spent_time">
+
+    <button type="submit">Отправить</button>
+</form>
+<script src="client/js/index.js"></script>
+</body>
+</html>

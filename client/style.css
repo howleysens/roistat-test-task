@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: lightslategray;
+    font-family: "Corbel";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+input {
+    background: white;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
